@@ -1,0 +1,46 @@
+---
+title: "SCEM(week1)"
+author: "Shijia He"
+date: "2025-09-24"
+output: html_document
+---
+
+```{r}
+animals <- c("Snake","Ostrich","Cat","Spider")
+num_legs <-c(0,2,4,8)
+animals_df <-data.frame(animals,num_legs)
+
+```{r print animals_df}
+animals_df
+
+```{r}
+x_vect <- seq(12,2, by = -2)
+x_vect
+X <- matrix(x_vect, 2, 3)
+X
+
+Y <-matrix(seq(4),2,2)
+Y
+
+Z <- matrix(seq(from = 4, to = 10, by = 2),2,2)
+Z
+
+t(Y)
+t(Z)
+
+Y+Z
+Z+Y
+
+Y*Z
+Y %*% Z
+Z %*% Y
+
+solve(Y)
+solve(Y)*Y
+solve(Y)%*%X
+solve(Y,X)
+
+
+
+
+
