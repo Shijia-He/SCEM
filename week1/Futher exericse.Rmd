@@ -1,0 +1,21 @@
+---
+title: "Futher exercise"
+author: "Shijia He"
+date: "2025-09-25"
+output: html_document
+---
+
+
+##Wave plot
+```{r}
+x <- seq(0,20, by = 0.01)
+y <- sin(x)
+sin_df <-data.frame(x,y)
+head(sin_df,3)
+
+
+plot(sin_df$x, sin_df$y, 
+  type="l", #stand for line and connect the points
+  main="Wave plot", #the title of plot
+  xlab="x", 
+  ylab="sin(x)")
